@@ -1,0 +1,6 @@
+public int ultimo() {
+    if (fim == null) {
+        throw new RuntimeException("Fila vazia");
+    }
+    return fim.dado;
+}
