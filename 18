@@ -1,3 +1,5 @@
+(DINAMICA)
+
 public int tamanho() {
     int count = 0;
     Node atual = inicio;
@@ -7,4 +9,10 @@ public int tamanho() {
         atual = atual.next;
     }
     return count;
+}
+
+(ESTATICA)
+
+public int tamanho() {
+    return qtd;
 }
