@@ -1,0 +1,18 @@
+import java.util.Stack;
+
+public static String converterBase(int numero, int base) {
+    Stack<Integer> pilha = new Stack<>();
+
+    while (numero > 0) {
+        pilha.push(numero % base);
+        numero /= base;
+    }
+
+    StringBuilder resultado = new StringBuilder();
+
+    while (!pilha.isEmpty()) {
+        resultado.append(pilha.pop());
+    }
+
+    return resultado.toString();
+}
