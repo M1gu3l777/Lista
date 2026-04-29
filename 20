@@ -1,0 +1,13 @@
+public boolean estaOrdenada() {
+    if (inicio == null) return true;
+
+    Node atual = inicio;
+
+    while (atual.next != null) {
+        if (atual.dado > atual.next.dado) {
+            return false;
+        }
+        atual = atual.next;
+    }
+    return true;
+}
