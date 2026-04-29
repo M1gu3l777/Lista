@@ -1,0 +1,13 @@
+public boolean existe(int valor) {
+    int i = inicio;
+    int count = 0;
+
+    while (count < qtd) {
+        if (elementos[i] == valor) {
+            return true;
+        }
+        i = (i + 1) % elementos.length;
+        count++;
+    }
+    return false;
+}
