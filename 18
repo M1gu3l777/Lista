@@ -1,0 +1,10 @@
+public int tamanho() {
+    int count = 0;
+    Node atual = inicio;
+
+    while (atual != null) {
+        count++;
+        atual = atual.next;
+    }
+    return count;
+}
