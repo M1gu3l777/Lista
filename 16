@@ -1,0 +1,13 @@
+public int posicao(int valor) {
+    Node atual = inicio;
+    int pos = 0;
+
+    while (atual != null) {
+        if (atual.dado == valor) {
+            return pos;
+        }
+        atual = atual.next;
+        pos++;
+    }
+    return -1; // não encontrado
+}
