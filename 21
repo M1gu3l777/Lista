@@ -1,0 +1,6 @@
+public int topo() {
+    if (topo == null) {
+        throw new RuntimeException("Pilha vazia");
+    }
+    return topo.dado;
+}
